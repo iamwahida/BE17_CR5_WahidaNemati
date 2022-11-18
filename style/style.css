@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Shadows Into Light", cursive;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(151, 197, 151);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  width: 100%;
+  background-color: pink;
+  border-bottom: 2px solid rgb(206, 61, 85);
+}
+nav div {
+  padding: 30px;
+  font-size: 28px;
+}
+nav div a {
+  color: black;
+  text-decoration: none;
+}
+nav div a:hover {
+  color: white;
+}
+
+.titel1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+  font-size: 40px;
+}
+
+.container {
+  font-size: 25px;
+}
+.container .row .card {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.container .row .card .card-title {
+  font-weight: bold;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  background-color: pink;
+}
+.container .row .card .btn {
+  background-color: pink;
+}
+.container .row .card .btn:hover {
+  background-color: rgb(151, 197, 151);
+}/*# sourceMappingURL=style.css.map */
