@@ -11,7 +11,7 @@ if (!isset($_SESSION['adm']) && !isset($_SESSION['user'])) {
 $logout ="";
 
 // USER DATA
-$status = 'adn';
+$status = 'user';
 $sqli = "SELECT * FROM users WHERE status != '$status'";
 $resulti = mysqli_query($connect, $sqli);
 $body = '';
@@ -85,9 +85,6 @@ if ($resulti->num_rows > 0) {
     <nav>
         <div><img src="pictures/pfote.webp" alt="pfote" width="50px">
         <a href="home.php"></a></div>
-        <div><a href="juniors.php">Juniors</a></div>
-        <div><a href="seniors.php">Seniors</a></div>
-        <div><a href="home.php">All pets</a></div>
         <div><?php echo $logout?></div> 
         <div><?php echo $dash?></div> 
 

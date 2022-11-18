@@ -56,4 +56,28 @@ nav div a:hover {
 }
 .container .row .card .btn:hover {
   background-color: rgb(151, 197, 151);
+}
+
+.user {
+  display: flex;
+  justify-content: left;
+  margin-top: 35px;
+  margin-left: 35px;
+}
+.user img {
+  width: 200px;
+  border-radius: 50px;
+  border: 2px solid white;
+}
+.user .welcome {
+  margin-top: 35px;
+  margin-left: 35px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+hr {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border: 4px solid rgb(248, 247, 247);
 }/*# sourceMappingURL=style.css.map */
