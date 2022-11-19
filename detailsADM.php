@@ -93,8 +93,7 @@ if ($resulti->num_rows > 0) {
   <!-- STATUS -->
     <div class="user">
     <img src="pictures/<?php echo $img?>" alt="Picture">
-    <div class="welcome">Welcome <?php echo $body?>!
-</div>
+    <div class="welcome">Welcome Administrator!</div>
 </div>
 <hr>
     <!-- ALLS ANIMALS -->

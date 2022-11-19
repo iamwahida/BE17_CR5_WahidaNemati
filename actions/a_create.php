@@ -25,11 +25,10 @@ if ($_POST) {
 
     $uploadError = '';
     //this function exists in the service file upload.
-    $picture = file_upload($_FILES['picture']);
+    $picture = file_upload($_FILES['picture'], "animal");
 
     $sql = "INSERT INTO animal (name, gender, picture, location, description, size, age, vaccinated, breed, status) VALUES ('$name', '$gender', '$picture->fileName', '$location', '$description', $size, $age, '$vaccinated', '$breed', '$status')";
     
-
     if (mysqli_query($connect, $sql) === true) {
         $class = "success";
         $message = "The entry below was successfully created <br>
@@ -65,7 +64,7 @@ if ($_POST) {
      <nav>
         <div>
         <a href="home.php"><img src="../pictures/pfote.webp" alt="pfote" width="50px"></a></div>
-        <div><a href="actions/create.php">Add animal</a></div>
+        <div><a href="create.php">Add animal</a></div>
         <div><a href="../dashboard.php">Dashboard</a></div>
 
     </nav>

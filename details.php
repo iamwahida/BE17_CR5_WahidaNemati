@@ -11,7 +11,7 @@ if (!isset($_SESSION['adm']) && !isset($_SESSION['user'])) {
 $logout ="";
 
 // USER DATA
-$status = 'adn';
+$status = 'adm';
 $sqli = "SELECT * FROM users WHERE status != '$status'";
 $resulti = mysqli_query($connect, $sqli);
 $body = '';

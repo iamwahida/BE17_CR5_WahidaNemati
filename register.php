@@ -44,7 +44,7 @@ if (isset($_POST['btn-signup'])) {
     $password = htmlspecialchars($password);
 
     $uploadError = "";
-    $picture = file_upload($_FILES['picture']);
+    $picture = file_upload($_FILES['picture'], "user");
 
 
     if (empty($first_name) || empty($last_name)) {

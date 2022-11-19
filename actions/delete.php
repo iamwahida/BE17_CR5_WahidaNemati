@@ -57,7 +57,7 @@ if ($_GET['id']) {
 if ($_POST) {
     $id = $_POST['id'];
     $picture = $_POST['picture'];
-    ($picture == "avatar.png") ?: unlink("pictures/$picture");
+    ($picture == "avatar.png") ?: unlink("../pictures/$picture");
 
     $sql = "DELETE FROM animal WHERE animalID = {$id}";
     if ($connect->query($sql) === TRUE) {
@@ -101,7 +101,7 @@ mysqli_close($connect);
      <!-- NAVBAR -->
      <nav>
         <div>
-        <a href="home.php"><img src="../animal-pictures/pfote.webp" alt="pfote" width="50px"></a></div>
+        <a href="home.php"><img src="../pictures/pfote.webp" alt="pfote" width="50px"></a></div>
         <div><?php echo $logout?></div> 
         <div><?php echo $dash?></div> 
         <div><?php echo $register?></div>
@@ -111,7 +111,7 @@ mysqli_close($connect);
         <p><?php echo ($message) ?? ''; ?></p>
     </div>
     <fieldset>
-        <legend class='h2 mb-3'>Delete request <img class='img-thumbnail rounded-circle' src='../animal-pictures/<?php echo $picture ?>' alt="<?php echo $name ?>"></legend>
+        <legend class='h2 mb-3'>Delete request <img class='img-thumbnail rounded-circle' src='../pictures/<?php echo $picture ?>' alt="<?php echo $name ?>"></legend>
         <h3>You have selected the data below:</h3>
         <table class="table w-75 mt-3">
             <tr class="text-center">

@@ -15,7 +15,7 @@ if ($_POST) {
     $status = $_POST['status'];
 
     $uploadError = '';
-    $picture = file_upload($_FILES['picture'], "products"); //file_upload() called  
+    $picture = file_upload($_FILES['picture'], "animal"); //file_upload() called  
 
     if ($picture->error === 0) {
         ($_POST['picture'] == "product.png" ?: unlink("../pictures/$_POST[picture]"));
